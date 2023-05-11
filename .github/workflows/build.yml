@@ -26,7 +26,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build
         run: mvn -B verify
-      - name: Upload Artifact
+      - name: Upload Artifact #I'm gay
         uses: actions/upload-artifact@v2
         with:
           name: Builded jars
